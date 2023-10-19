@@ -1,0 +1,1328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Background*/
+body {
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: rgb(237, 133, 236);
+    font-family: 'Martian Mono', monospace;
+    color: rgb(15, 22, 69);
+}
+
+.absolute {
+    position: absolute;
+    top: 50px !important;
+    inset: 0;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.bg-shape1 {
+    width: 400px;
+    height: 400px;
+    border-radius: 9999px;
+    position: relative;
+    animation: one 10s infinite;
+}
+
+.bg-shape2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 9999px;
+    position: relative;
+    animation: two 10s infinite;
+}
+
+.bg-shape4 {
+    width: 300px;
+    height: 300px;
+    border-radius: 9999px;
+    position: relative;
+    animation: three 10s infinite;
+}
+
+.bg-shape5 {
+    width: 300px;
+    height: 300px;
+    border-radius: 9999px;
+    position: relative;
+    animation: four 10s infinite;
+}
+
+.bg-shape6 {
+    width: 300px;
+    height: 300px;
+    border-radius: 9999px;
+    position: relative;
+    animation: five 10s infinite;
+}
+
+@keyframes one {
+    0% {
+        left: 0px;
+        top: 3000px;
+    }
+
+    25% {
+        left: -100px;
+        top: 2070px;
+    }
+
+    50% {
+        left: 20px;
+        top: 1150px;
+    }
+
+    75% {
+        left: 50px;
+        top: 2100px;
+    }
+
+    100% {
+        left: 0px;
+        top: 3000px;
+    }
+}
+
+@keyframes two {
+    0% {
+        left: 0px;
+        top: 3000px;
+    }
+
+    25% {
+        left: 50px;
+        top: 1000px;
+    }
+
+    50% {
+        left: 100px;
+        top: 50px;
+    }
+
+    75% {
+        left: 50px;
+        top: 1000px;
+    }
+
+    100% {
+        left: 0px;
+        top: 2000px;
+    }
+}
+
+@keyframes three {
+    0% {
+        left: -500px;
+        top: 800px;
+    }
+
+    25% {
+        left: -100px;
+        top: 800px;
+    }
+
+    50% {
+        left: -20px;
+        top: 330px;
+    }
+
+    75% {
+        left: -150px;
+        top: 800px;
+    }
+
+    100% {
+        left: -500px;
+        top: 800px;
+    }
+}
+
+@keyframes four {
+    0% {
+        left: -800px;
+        top: 800px;
+    }
+
+    25% {
+        left: -700px;
+        top: 850px;
+    }
+
+    50% {
+        left: -120px;
+        top: 800px;
+    }
+
+    75% {
+        left: -150px;
+        top: 650px;
+    }
+
+    100% {
+        left: -800px;
+        top: 800px;
+    }
+}
+
+@keyframes five {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: -100px;
+        top: 70px;
+    }
+
+    50% {
+        left: 20px;
+        top: 150px;
+    }
+
+    75% {
+        left: 50px;
+        top: 100px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes five {
+    0% {
+        left: -500px;
+        top: 1000px;
+    }
+
+    25% {
+        left: -100px;
+        top: 1000px;
+    }
+
+    50% {
+        left: -500px;
+        top: 1500px;
+    }
+
+    75% {
+        left: -100px;
+        top: 1000px;
+    }
+
+    100% {
+        left: -500px;
+        top: 1700px;
+    }
+}
+
+.opacity-50 {
+    opacity: .5;
+}
+
+.bg-blur {
+    filter: blur(90px);
+}
+
+.bg-red {
+    background-color: rgb(214, 0, 48);
+}
+
+.bg-blue {
+    background-color: rgb(15, 22, 69);
+}
+
+.bg-yellow {
+    background-color: rgb(247, 195, 68);
+}
+
+/*logo*/
+
+
+
+h1 {
+    margin: 0 auto;
+    top: 160px;
+    left: 450px;
+    width: 20%;
+    text-align: center;
+    font-family: 'Martian Mono', monospace;
+    font-size: 30px;
+    position: relative;
+    color: rgb(15, 22, 69);
+}
+
+/*rgb(93,205,255)*/
+
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+
+}
+
+@keyframes animate {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    80% {
+        width: 90%;
+    }
+}
+
+/*glowing logo*/
+
+.wrapper img {
+    position: absolute;
+    height: 370px;
+    margin-left: 800px;
+
+}
+
+.wrapper img#on {
+    opacity: 0;
+    animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 1;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    74% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    84% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*glowing card 1*/
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+:root {
+    --clr-1: rgb(15, 22, 69);
+    --clr-2: rgb(93, 205, 255);
+    --clr-3: #fff;
+    --clr-4: rgb(93, 205, 255);
+    --clr-5: #fff;
+
+}
+
+.card,
+.card2,
+.card3,
+.card4 {
+    height: 40vh;
+    width: 60vh;
+    background: var(--clr-1);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+
+
+.card::before,
+.card::after,
+.card2::before,
+.card2::after,
+.card3::before,
+.card3::after,
+.card4::before,
+.card4::after {
+    content: "";
+    position: absolute;
+    inset: -.1rem;
+    z-index: -1;
+    border-radius: 0.5rem;
+    background: conic-gradient(from var(--gradient-angle),
+            var(--clr-3),
+            var(--clr-4),
+            var(--clr-5),
+            var(--clr-4),
+            var(--clr-3));
+    animation: rotation 20s linear infinite
+}
+
+.card::after,
+.card2::after,
+.card3::after,
+.card4::after {
+    filter: blur(3.5rem);
+}
+
+@keyframes rotation {
+    0% {
+        --gradient-anlge: 0deg;
+    }
+
+    100% {
+        --gradient-angle: 360deg;
+    }
+}
+
+
+
+/* inicio onepage*/
+
+
+.father {
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+
+
+}
+
+.seccionTitulos {
+    display: flex;
+    flex-direction: row;
+}
+
+.bienvenida {
+    position: relative;
+    margin-left: 100px;
+    font-size: 2.5em;
+    grid-area: bienvenida;
+    margin-top: 300px;
+
+}
+
+.seccionTitulos {
+    margin-top: 200px;
+}
+
+.tituloServicios {
+    position: relative;
+    /* margin-left: 100px;*/
+    font-size: 1.5em;
+    width: 40%;
+    grid-area: tituloServicios;
+    margin-left: 100px;
+}
+
+.textoSecundario {
+    margin-top: 10px;
+}
+
+.intro {
+    position: relative;
+    width: 45%;
+    grid-area: intro;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+
+.seccion1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.desarrollo {
+    width: 30%;
+    position: relative;
+    margin-left: 100px;
+    padding-top: 10px;
+}
+
+
+
+.card {
+    color: rgb(237, 133, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 134px;
+    width: 30%;
+
+}
+
+.card ul {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.seccion2 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.comunicacion {
+    width: 30%;
+    position: relative;
+    /*  margin-top: 200px;
+    margin-left: 800px;*/
+    margin-left: 134px;
+}
+
+.card2 {
+    color: rgb(237, 133, 236);
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    justify-content: center;
+    width: 30%;
+
+}
+
+.card2 ul {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.seccion3 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.disenio {
+    width: 30%;
+    position: relative;
+    /* margin-top: 250px;
+    margin-left: 100px;*/
+    grid-area: disenio;
+    margin-left: 100px;
+
+
+}
+
+.card3 {
+    color: rgb(237, 133, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-left: 134px;
+
+}
+
+.card3 ul {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.seccion4 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.marketing {
+    width: 30%;
+    position: relative;
+    margin-left: 134px;
+    /* margin-left: 800px;
+    margin-top: 100px;*/
+}
+
+.card4 {
+    color: rgb(237, 133, 236);
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    justify-content: center;
+    margin-bottom: 400px;
+    width: 30%;
+
+
+}
+
+.card4 ul {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/*footer*/
+
+
+footer {
+    background-color: rgb(15, 22, 69);
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 150px;
+
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 15px 5px 60px;
+
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(237, 133, 236);
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    text-decoration: none;
+    color: rgb(15, 22, 69);
+    border-radius: 50%;
+}
+
+.socialIcons a:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: hsl(240, 248, 255);
+    transition: 0.5s;
+}
+
+.footerBottom {
+    background-color: rgb(14, 21, 63);
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.footerBottom p {
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/*media querys*/
+
+
+
+
+@media (max-width:1400px) {
+    .wrapper img {
+        margin-left: 760px;
+    }
+
+    h1 {
+        margin-left: 536px;
+    }
+
+   
+
+    .card, .card2, .card3, .card4{
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+@media (max-width:1280px) {
+    .wrapper img {
+        margin-left: 700px;
+    }
+
+    h1 {
+        margin-left: 456px;
+        width: 22%;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 90%;
+        }
+    }
+
+
+
+
+}
+
+
+@media (max-width:1197px) {
+
+
+    .wrapper img {
+        margin-left: 610px;
+    }
+
+    h1 {
+        margin-left: 406px;
+
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 87%;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width:1162px) {
+
+
+    .wrapper img {
+        margin-left: 600px;
+    }
+
+    h1 {
+        margin-left: 330px;
+        width: 27%;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 80%;
+        }
+    }
+
+}
+
+
+
+@media (max-width:1119px) {
+
+
+    .wrapper img {
+        margin-left: 500px;
+    }
+
+    h1 {
+        margin-left: 200px;
+        width: 40%;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 22%;
+        }
+    }
+}
+
+
+@media (max-width:1115px) {
+
+
+    .wrapper img {
+        margin-left: 530px;
+    }
+
+    h1 {
+        margin-left: 200px;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 54%;
+        }
+    }
+
+    .card,
+    .card3,
+    .comunicacion,
+    .marketing {
+        width: 40%;
+    }
+
+
+
+
+}
+
+@media (max-width:1109pc) {
+    .card2 {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:1099px) {
+
+
+    .wrapper img {
+        margin-left: 530px;
+    }
+
+    h1 {
+        margin-left: 270px;
+        width: 30%;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 74%;
+        }
+    }
+
+
+}
+
+
+@media (max-width:1070px) {}
+
+@media (max-width:1055px) {
+
+    h1 {
+        margin-left: 270px;
+    }
+
+    
+}
+
+@media (max-width:1044px) {
+    h1 {
+        margin-left: -300px;
+    }
+
+    .wrapper img {
+        margin-left: -30px;
+    }
+
+
+    .comunicacion,
+    .marketing {
+        width: 40%;
+    }
+
+    .card2,
+    .card4 {
+        width: 30%;
+    }
+}
+
+
+@media (max-width:1014px) {
+
+    .card,
+    .card3 {
+        width: 40%;
+    }
+
+
+}
+
+
+
+@media (max-width: 961px) {
+  .intro{
+    font-size: 0.9em;
+    margin-left: 48px;
+  }
+}
+
+@media (max-width:926px) {
+
+    h1 {
+        margin-left: -270px;
+    }
+
+    .tituloServicios {
+        width: 50%;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 83%;
+        }
+    }
+
+
+    .father {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionTitulos {
+        display: flex;
+        flex-direction: column;
+        margin-top: -400px;
+    }
+
+    .intro {
+        width: 80%;
+        margin-left: 0px;
+    }
+
+    p {
+        margin-bottom: 60px;
+    }
+
+    .subtituloBienvenida {
+        margin-top: 60px;
+    }
+
+    .tituloServicios {
+        margin-top: 300px;
+        font-size: 2em;
+    }
+
+    .textoPrincipal {
+        margin-left: 100px;
+    }
+
+    .textoSecundario {
+        margin-top: 60px;
+        margin-left: 100px;
+    }
+
+    .seccion1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        margin-left: 100px;
+        width: 60%;
+
+    }
+
+    .seccion2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .comunicacion {
+        margin-left: 100px;
+        width: 60%;
+    }
+
+    .card2{
+        width: 60%;
+    }
+
+    .seccion3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .disenio, .desarrollo {
+        width: 60%;
+    }
+
+    .card3 {
+        width: 60%;
+        margin-left: 100px;
+
+    }
+
+    .seccion4 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .marketing {
+        margin-left: 100px;
+        width: 60%;
+       
+
+    }
+
+    .card4 {
+        width: 60%;
+    }
+
+}
+
+@media(max-width:887px){
+  
+
+    h1 {
+        width: 42%;
+        margin-left: -290px;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 69%;
+        }
+    }   
+}
+
+@media(max-width:746px){
+  
+
+    h1 {
+        width: 42%;
+        margin-left: -290px;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 73%;
+        }
+    }   
+
+
+    .tituloServicios{
+        width: 60%;
+    }
+}
+
+@media (max-width: 723px){
+
+    h1 {
+        width: 42%;
+        margin-left: -290px;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 75%;
+        }
+    }   
+
+}
+
+
+@media (max-width: 682px){
+    h1 {
+        width: 42%;
+        margin-left: -290px;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 80%;
+        }
+    }   
+}
+
+
+@media (max-width: 634px){
+    h1 {
+        width: 42%;
+        margin-left: -270px;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 87%;
+        }
+    }   
+
+
+    
+}
+
+
+@media (max-width: 616px){
+    h1 {
+        width: 50%;
+        margin-left: -350px;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 84%;
+        }
+    }   
+
+    .wrapper img {
+        margin-left: -90px;
+    }
+    
+    .bienvenida{
+        margin-left: 50px;
+    }
+
+    .tituloServicios{
+        margin-left: 50px;
+        width: 80%;
+    }
+
+    .intro{
+        margin-left: -50px;
+    }
+
+    .seccion1, .seccion2, .seccion3, .seccion4{
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 520px){
+
+    h1 {
+        width: 70%;
+        margin-left: -350px;
+    }
+
+    @keyframes animate {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        80% {
+            width: 64%;
+        }
+    }   
+
+}
+
+@media (max-width: 505px){
+h1{
+    display: none;
+}
+
+.wrapper img {
+    width: 50%;
+    height: 38%;
+    margin-left: -50px;
+
+}
+
+.bienvenida{
+    font-size: 1em;
+
+}
+
+.tituloBienvenida{
+    margin-top: -210px;
+    margin-left: 70px;
+}
+
+.subtituloBienvenida{
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+
+.tituloServicios{
+    font-size: 0.9em;
+    margin-top: 100px;
+}
+
+.intro{
+margin-top: 100px;
+}
+
+
+.textoPrincipal, .textoSecundario{
+font-size: 0.9em;
+}
+
+.desarrollo, .comunicacion, .disenio, .marketing{
+    font-size: 0.9em;
+}
+
+.desarrollo{
+    margin-top: -50px;
+}
+
+}
+
+@media (max-width: 487px){
+    .wrapper img{
+        margin-left: -40px;
+    }
+}
+
+
+@media (max-width: 487px){
+    .wrapper img{
+        margin-left: -30px;
+    }
+}
+
+@media (max-width: 414px){
+    .wrapper img{
+        margin-left: -30px;
+        width: 55%;
+    }
+
+    .card, .card2, .card3, .card4{
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 405px){
+    .wrapper img{
+        margin-left: -20px;
+        margin-top: 17px;
+    }
+}
+
+@media (max-width: 328px){
+    .wrapper img{
+        margin-left: 0px;
+        margin-top: 17px;
+    }
+}
