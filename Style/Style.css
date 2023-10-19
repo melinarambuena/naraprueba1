@@ -1248,10 +1248,7 @@ h1{
 }
 
 .wrapper img{
-margin-top: -25px;
-width: 45%;
-height: 45%;
-margin-left: -40px;
+display: none;
 }
 
 .bienvenida{
@@ -1261,7 +1258,6 @@ margin-left: -40px;
 
 .tituloBienvenida{
     margin-top: -210px;
-    margin-left: 70px;
 }
 
 .subtituloBienvenida{
