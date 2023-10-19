@@ -250,7 +250,13 @@ body {
 
 /*logo*/
 
+/*chico*/
 
+.chico{
+    display: none;
+}
+
+/*logo glow*/
 
 h1 {
     margin: 0 auto;
@@ -1239,6 +1245,19 @@ footer {
 }
 
 @media (max-width: 505px){
+.chico{
+    display: contents;
+    position: relative;
+    
+}
+
+.chico img{
+    width: 17%;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+
 h1{
     display: none;
 }
@@ -1253,11 +1272,14 @@ display: none;
 
 .bienvenida{
     font-size: 1em;
-
+    margin-top: 0px;
 }
-
+.seccionTitulos{
+    margin-top: -500px;
+}
 .tituloBienvenida{
-    margin-top: -210px;
+    margin-top: -320px;
+    margin-left: 80px;
 }
 
 .subtituloBienvenida{
