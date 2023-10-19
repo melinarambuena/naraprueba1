@@ -850,7 +850,7 @@ footer {
 
 @media (max-width:1109pc) {
     .card2 {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 }
 
@@ -1277,9 +1277,11 @@ display: none;
 .seccionTitulos{
     margin-top: -500px;
 }
+
 .tituloBienvenida{
     margin-top: -320px;
     margin-left: 80px;
+    width: 50%;
 }
 
 .subtituloBienvenida{
