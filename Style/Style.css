@@ -1243,8 +1243,16 @@ h1{
     display: none;
 }
 
+.wrapper img#on{
+    display: none;
+}
 
-
+.wrapper img{
+margin-top: 0px;
+width: 45%;
+height: 45%;
+margin-left: -40px;
+}
 
 .bienvenida{
     font-size: 1em;
