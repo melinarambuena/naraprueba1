@@ -611,7 +611,13 @@ footer {
     height: 150px;
 
 }
-
+.contacto{
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 .footerContainer {
     width: 100%;
     padding: 15px 5px 60px;
@@ -966,6 +972,7 @@ footer {
         flex-direction: column;
     }
 
+    
     .seccionTitulos {
         display: flex;
         flex-direction: column;
